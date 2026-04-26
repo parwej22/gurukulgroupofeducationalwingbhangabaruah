@@ -16,3 +16,20 @@ function changeSlide() {
 }
 
 setInterval(changeSlide, 3000);
+// MOBILE MENU TOGGLE
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("active");
+}
+
+// DROPDOWN TOGGLE
+function toggleDropdown(id) {
+  document.getElementById(id).classList.toggle("show");
+}
+
+// CLICK OUTSIDE CLOSE
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    let dropdowns = document.querySelectorAll(".dropdown-content");
+    dropdowns.forEach(d => d.classList.remove("show"));
+  }
+}
