@@ -68,14 +68,17 @@ nav a {
   margin-top: 20px;
 }
 
+/* 🔵 CIRCLE IMAGE STYLE */
 .principal-img img {
-  width: 250px;
-  height: 300px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 50%;   /* circle banane ke liye */
+  border: 5px solid #1b5e20;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+/* TEXT */
 .principal-text {
   max-width: 500px;
   text-align: left;
