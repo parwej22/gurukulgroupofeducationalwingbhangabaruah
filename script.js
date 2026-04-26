@@ -1,18 +1,23 @@
-/* MOBILE MENU */
 function toggleMenu() {
   document.getElementById("navMenu").classList.toggle("active");
 }
 
-/* DROPDOWN FIX (WORKING 100%) */
 function toggleDropdown(btn) {
-  let dropdown = btn.nextElementSibling;
-  dropdown.classList.toggle("show");
+  let menu = btn.nextElementSibling;
+  menu.classList.toggle("show");
 }
 
-/* CLOSE WHEN CLICK OUTSIDE */
-window.addEventListener("click", function(e) {
-  if (!e.target.matches('.dropbtn')) {
-    let dropdowns = document.querySelectorAll(".dropdown-content");
-    dropdowns.forEach(d => d.classList.remove("show"));
-  }
-});
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function autoSlide() {
+  if (slides.length === 0) return;
+
+  slides.forEach(s => s.classList.remove("active"));
+
+  slides[index].classList.add("active");
+
+  index = (index + 1) % slides.length;
+}
+
+setInterval(autoSlide, 3000);
