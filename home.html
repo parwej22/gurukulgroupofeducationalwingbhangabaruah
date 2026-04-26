@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Home - Gurukul Group</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Gurukul Group of Educational Wing</title>
+
+  <!-- ✅ CSS LINK (IMPORTANT FIX) -->
+  <link rel="stylesheet" href="./css/style.css">
+
 </head>
+
 <body>
 
+<!-- HEADER -->
 <header>
   <div class="logo">
-    <img src="images/logo.png">
-    <h2>Gurukul Group</h2>
+    <img src="./images/logo.png" alt="Logo">
+    <h2>Gurukul Group of Educational Wing</h2>
   </div>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -19,20 +26,96 @@
   </nav>
 </header>
 
+<!-- SLIDER -->
 <section class="slider">
+
   <img src="https://res.cloudinary.com/demo/image/upload/sample.jpg" class="slide active">
   <img src="https://res.cloudinary.com/demo/image/upload/sample.jpg" class="slide">
+  <img src="https://res.cloudinary.com/demo/image/upload/sample.jpg" class="slide">
+
+  <div class="overlay">
+    <h1>Welcome to Gurukul Group of Educational Wing</h1>
+    <p>Quality Education for Bright Future</p>
+  </div>
+
 </section>
 
+<!-- PRINCIPAL SECTION -->
+<section class="principal">
+
+  <h2>Principal’s Message</h2>
+
+  <div class="principal-container">
+
+    <div class="principal-img">
+      <img src="https://res.cloudinary.com/demo/image/upload/sample.jpg" alt="Principal">
+    </div>
+
+    <div class="principal-text">
+      <h3>Principal Name</h3>
+      <p>
+        Welcome to our school. We focus on discipline, education and overall development of students.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
 <section class="section">
-  <h2>Welcome to Gurukul Group of Educational Wing</h2>
-  <p>We build future with quality education.</p>
+  <h2>About Our School</h2>
+  <p>
+    Gurukul Group of Educational Wing provides quality education with modern facilities and experienced teachers.
+  </p>
 </section>
 
+<!-- FACILITIES -->
+<section class="section">
+  <h2>Facilities</h2>
+
+  <div class="cards">
+    <div class="card">Science Lab</div>
+    <div class="card">Computer Lab</div>
+    <div class="card">Library</div>
+    <div class="card">Sports</div>
+    <div class="card">Hostel</div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
-  <p>© 2026 Gurukul Group</p>
+
+  <div class="footer-container">
+
+    <div>
+      <h3>Gurukul Group</h3>
+      <p>Education for better future.</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <p>Email: info@gurukul.com</p>
+      <p>Phone: +91 9876543210</p>
+    </div>
+
+  </div>
+
+  <p class="bottom">© 2026 Gurukul Group of Educational Wing</p>
+
 </footer>
 
-<script src="js/script.js"></script>
+<!-- JS -->
+<script src="./js/script.js"></script>
+
 </body>
 </html>
