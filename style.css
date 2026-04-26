@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1b5e20;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+nav a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* SLIDER */
+.slider {
+  position: relative;
+  height: 90vh;
+}
+
+.slide {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: white;
+}
+
+/* SECTION */
+.section {
+  padding: 50px;
+  text-align: center;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+/* FORM */
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background: black;
+  color: white;
+  padding: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 20px;
+}
