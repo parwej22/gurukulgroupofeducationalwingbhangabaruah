@@ -6,18 +6,43 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="logo">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb6w3NJw_thGCol3t0fhzBbCXeeKP3wLXYUQ&s" alt="School Logo">
-    <h2>Gurukul Group of Educational Wing</h2>
+    <img src="./images/logo.png" alt="Logo">
+    <h2>Gurukul Group</h2>
   </div>
 
-  <nav>
+  <!-- HAMBURGER -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav id="navMenu">
+
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="facilities.html">Facilities</a>
+
+    <!-- ABOUT -->
+    <div class="dropdown">
+      <button onclick="toggleDropdown('aboutMenu')" class="dropbtn">About ▾</button>
+      <div class="dropdown-content" id="aboutMenu">
+        <a href="#">School History</a>
+        <a href="#">Principal</a>
+        <a href="#">Vision & Mission</a>
+        <a href="#">Management</a>
+      </div>
+    </div>
+
+    <!-- FACILITIES -->
+    <div class="dropdown">
+      <button onclick="toggleDropdown('facMenu')" class="dropbtn">Facilities ▾</button>
+      <div class="dropdown-content" id="facMenu">
+        <a href="#">Science Lab</a>
+        <a href="#">Computer Lab</a>
+        <a href="#">Library</a>
+        <a href="#">Sports</a>
+      </div>
+    </div>
+
     <a href="contact.html">Contact</a>
+
   </nav>
 </header>
 
