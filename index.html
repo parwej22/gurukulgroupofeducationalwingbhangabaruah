@@ -1,153 +1,635 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Gurukul Group of Educational Wing</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gurukul Group of Educationl Wing is a CBSE affiliated school in Bhangabaruah, Assam. Offering quality education from Balvatika-I to IX since 2019.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://gurukulgroupofeducationwing.netlify.app">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gurukul Group of Educationl Wing Bhangaburah - Quality Education Since 2017">
+  <meta property="og:description" content="Gurukul Group of Educationl Wing is a CBSE affiliated school in Bhangabaruah, Assam. Offering quality education from Balvatika-I to IX since 2019.">
+  <meta property="og:image" content="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926271/banner1_o61h0v.jpg">
+  <meta property="og:url" content="https://gurukulgroupofeducationwing.netlify.app">
+  <meta property="og:site_name" content="Gurukul Group of Educationl Wing">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Gurukul Group of Educationl Wing Bhangabaruah - Quality Education Since 2019">
+  <meta name="twitter:description" content="Gurukul Group of Educationl Wing Bhangabaruah is a CBSE affiliated school in Bhangabaruah, Assam. Offering quality education from Balvatika-I to IX since 2019.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/dsfgnnpho/image/upload/v1774781339/logo_gnkodp.png">
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/dsfgnnpho/image/upload/v1774781339/logo_gnkodp.png">
+  <link rel="apple-touch-icon" href="https://res.cloudinary.com/dsfgnnpho/image/upload/v1774781339/logo_gnkodp.png">
+  <title>Gurukul Group of Educationl Wing Bhangabaruah- Quality Education Since 2019</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <body>
 
-<header>
-  <div class="logo">
-    <img src="./images/logo.png">
-    <h2>Gurukul Group</h2>
-  </div>
+  <div id="nav-placeholder"></div>
 
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <section class="hero" id="hero">
+    <div class="slider-track">
+      <div class="slide active">
+         <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926271/banner1_o61h0v.jpg" alt="Gurukul School" loading="eager">
+      </div>
+      <div class="slide">
+        <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926289/schoolawardbanner_tga7ln.jpg" alt="School Award" loading="lazy">
+      </div>
+      <div class="slide">
+        <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926301/admissionbanner2023_rsnvxt.jpg" alt="Admissions Open" loading="lazy">
+      </div>
 
-  <nav id="navMenu">
-
-    <a href="index.html">Home</a>
-
-    <!-- ABOUT -->
-    <div class="dropdown">
-      <button onclick="toggleDropdown(this)" class="dropbtn">About ▾</button>
-      <div class="dropdown-content">
-        <a href="#">School History</a>
-        <a href="#">Principal</a>
-        <a href="#">Vision</a>
-        <a href="#">Management</a>
+    </div>
+    <div class="hero-overlay">
+      <div class="hero-top">
+        <div class="hero-tag">CBSE Affiliated School</div>
+        <h1>Where Every Child<br>Finds Their Potential</h1>
+        <p>Nurturing young minds with quality education, modern infrastructure, and dedicated teachers since 2017.</p>
+        <div class="notice-bar">
+          📢 Balvatika-I to IX
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="pages/admission.html" class="btn btn-primary">Apply for Admission</a>
+        <a href="https://res.cloudinary.com/dsfgnnpho/image/upload/v1774780911/Prospectus_zc6pkr.pdf" target="_blank" class="btn btn-outline">Download Prospectus</a>
       </div>
     </div>
-<a href="#">STAFF</a>
-<!-- OUR SCHOOL -->
-    <div class="dropdown">
-      <button onclick="toggleDropdown(this)" class="dropbtn">About ▾</button>
-      <div class="dropdown-content">
-        <a href="#">Infrastructure</a>
-        <a href="#">Achievements</a>
-        <a href="#">Gallery</a>
+    <div class="slider-dots" id="sliderDots"></div>
+  </section>
+
+  <!--div class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="num">1200+</span>
+        <span class="label">Students Enrolled</span>
+      </div>
+      <div class="stat-item">
+        <span class="num">80+</span>
+        <span class="label">Qualified Teachers</span>
+      </div>
+      <div class="stat-item">
+        <span class="num">98%</span>
+        <span class="label">Pass Rate 2024</span>
+      </div>
+      <div class="stat-item">
+        <span class="num">20</span>
+        <span class="label">Years of Excellence</span>
       </div>
     </div>
-    
-    <!-- FACILITIES -->
-    <div class="dropdown">
-      <button onclick="toggleDropdown(this)" class="dropbtn">Facilities ▾</button>
-      <div class="dropdown-content">
-        <a href="#">Science Lab</a>
-        <a href="#">Computer Lab</a>
-        <a href="#">Library</a>
-        <a href="#">Sports</a>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-placeholder" data-aos="fade-right">
+          
+        
+     
+
+       
+
+        <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1776804268/WhatsApp_Image_2026-04-13_at_8.43.24_PM_njlnth.jpg" style="position:absolute;width:100%;height:100%;object-fit:cover;opacity:1;transition:opacity 1s;">
+
+     
+          
+          School Campus Photo</div>
+
+        
+        <div class="about-text" data-aos="fade-left">
+          <h2 class="section-title" data-aos="fade-up">Welcome to Gurukul Group of Educationl Wing</h2>
+          <div class="divider"></div>
+          <p>Gurukul Group of Educationl Wing is a premier CBSE-affiliated institution committed to delivering holistic education. We believe every student has unique strengths, and our role is to identify and nurture those strengths in a supportive environment.</p>
+          <p>Our experienced faculty, state-of-the-art facilities, and structured curriculum prepare students not just for examinations but for life. We combine academic rigor with co-curricular activities to develop well-rounded individuals.</p>
+          <ul class="about-bullets">
+            <li><span class="bullet-dot"></span> CBSE Affiliated, Balvatika-I to IX</li>
+            <li><span class="bullet-dot"></span> Experienced and dedicated teaching faculty</li>
+            <li><span class="bullet-dot"></span> Modern labs, library, and sports facilities</li>
+            <li><span class="bullet-dot"></span> Safe, inclusive campus environment</li>
+          </ul>
+          <a href="pages/about.html" class="btn btn-primary">Learn More</a>
+        </div>
       </div>
     </div>
+  </section>
 
-    <a href="contact.html">Contact</a>
-
-  </nav>
-</header>
-<!-- SLIDER -->
-<section class="slider">
-  <img src="https://scontent.fgau1-6.fna.fbcdn.net/v/t39.30808-6/433468478_938819731586680_5184658104457067329_n.png?_nc_cat=108&ccb=1-7&_nc_sid=2a1932&_nc_ohc=fKYljoEfjOQQ7kNvwEnzQkw&_nc_oc=Adr3e_PUXfpwp9Bxn-0JY8Ej2DOkH59gYq4pzIsdHGoFHqng2lDtkpSXBx9yxmsjraxcGtlfY_0TSLlOOsjA6uC_&_nc_zt=23&_nc_ht=scontent.fgau1-6.fna&_nc_gid=GOmRAPWXd7l1dX2hkZDmTw&_nc_ss=7b289&oh=00_Af00c4IsihejlHe4tHr-Si3k7_eFyq4CPGkUqc0NNgSWnQ&oe=69F39CE5" class="slide active">
-  <img src="https://res.cloudinary.com/demo/image/upload/sample.jpg" class="slide">
-  <img src="https://res.cloudinary.com/demo/image/upload/sample.jpg" class="slide">
-
-  <div class="overlay">
-    <h1>Welcome to Gurukul Group of Educational Wing</h1>
-    <p>ज्ञान ही शक्ति है | Education is the Key to Success</p>
-    <button>Apply Now</button>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="section">
-  <h2>About Our School</h2>
-  <p>
-    Gurukul Group of Educational Wing is committed to providing quality education
-    with modern facilities and experienced faculty members.
-  </p>
-</section>
-<!-- PRINCIPAL MESSAGE -->
-<section class="principal">
-  <h2>Principal’s Message</h2>
-
-  <div class="principal-container">
-
-    <div class="principal-img">
-      <!-- Cloudinary image (replace with your principal photo) -->
-      <img src="https://res.cloudinary.com/demo/image/upload/sample.jpg" alt="Principal Image">
+  <section>
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Our Facilities</h2>
+      <div class="divider"></div>
+      <div class="facilities-grid">
+        <div class="facility-card" data-aos="fade-up">
+          <div class="facility-icon">🔬</div>
+          <h4>Science Laboratory</h4>
+          <p>Fully equipped labs for Physics, Chemistry, and Biology. Students learn through hands-on experiments aligned with the CBSE curriculum.</p>
+        </div>
+        <div class="facility-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="facility-icon">💻</div>
+          <h4>Computer Lab</h4>
+          <p>Modern computer labs with high-speed internet. Students get practical exposure to programming, MS Office, and digital tools.</p>
+        </div>
+        <div class="facility-card" data-aos="fade-up">
+          <div class="facility-icon">📚</div>
+          <h4>Library</h4>
+          <p>A well-stocked library with over 10,000 books, periodicals, journals, and digital resources for students and staff.</p>
+        </div>
+        <div class="facility-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="facility-icon">⚽</div>
+          <h4>Sports Ground</h4>
+          <p>Large grounds for cricket, football, volleyball, basketball, and athletics. We believe physical fitness is as important as academics.</p>
+        </div>
+        <div class="facility-card" data-aos="fade-up">
+          <div class="facility-icon">🏠</div>
+          <h4>Hostel</h4>
+          <p>Separate boys and girls hostel with 24/7 supervision, nutritious meals, and a comfortable study environment.</p>
+        </div>
+        <div class="facility-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="facility-icon">🎨</div>
+          <h4>Activity Rooms</h4>
+          <p>Dedicated spaces for music, art, dance, and drama. Co-curricular activities are an integral part of our daily schedule.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="principal-text">
-      <h3>Dr. (Principal Name)</h3>
-      <p>
-        Welcome to Gurukul Group of Educational Wing.  
-        Our mission is to provide quality education with discipline, values and modern learning methods.  
-        We focus on overall development of students so they can achieve success in life.
-      </p>
+  <section>
+    <div class="container">
+      <div class="principal-wrap">
+        <div class="principal-photo" data-aos="fade-right">
+          <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926789/principal_boztgf.jpg"
+               alt="Mr. , Principal"
+               onerror="this.style.display='none'" loading="lazy">
+          <div class="principal-photo-caption">
+            <p class="p-title">Principal</p>
+            <p class="p-name">Mr. </p>
+            <p class="p-quals">B.Sc.</p>
+          </div>
+        </div>
+        <div class="principal-text" data-aos="fade-left">
+          <h2 class="section-title" data-aos="fade-up">Principal's Message</h2>
+          <div class="divider"></div>
+          <blockquote>
+            <p>Dear Parents,</p>
+            <p>It is with great pleasure that we welcome you and your family to our school, Gurukul Group of Educational Wing.</p>
+            <p>As Dr. APJ Abdul Kalam said, "The purpose of Education is to make good human beings with skill and expertise... Enlightened human beings can be created by teachers." So, a teacher plays a key role in building skills, good qualities, behaviour, and healthy habits among children.</p>
+            <p>Effective time management is the need of the hour — for the student, the teacher, and the parent. Let us all contribute to the all-round development of the child and be enriched with learning experiences.</p>
+            <p>With warm regards</p>
+          </blockquote>
+          <p class="principal-name">Mr. </p>
+          <p class="principal-role">Principal, Gurukul Group of Educationl Wing</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
-</section>
-<!-- FACILITIES -->
-<section class="section">
-  <h2>Our Facilities</h2>
-  <div class="cards">
-    <div class="card">Science Lab</div>
-    <div class="card">Computer Lab</div>
-    <div class="card">Library</div>
-    <div class="card">Sports</div>
-    <div class="card">Hostel</div>
-  </div>
-</section>
+<!--section class="alt-bg">
+    <div class="container">
+ <h2 class="section-title text-center">Our Toppers 2026</h2>
+      <div class="divider center"></div>
+      <div class="toppers-grid">
+          <div class="topper-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926604/pratista_shivam_e4jzgf.jpg" alt="Pratishtha Shivam" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="94.8" data-suffix="%">0%</span></div>
+          <h5>Pratishtha Shivam</h5>
+          <p>Class XII, 2026</p>
+          <p>Humanities</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926588/Debasish_sah_zwhsan.jpg" alt="Debasish Saharia" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="94.2" data-suffix="%">0%</span></div>
+          <h5>Debasish Saharia</h5>
+          <p>Class XII, 2026</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926575/angaraag_baruah_h2gj3q.jpg" alt="Angaraag Baruah" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="92.2" data-suffix="%">0%</span></div>
+          <h5>Angaraag Baruah</h5>
+          <p>Class XII, 2026</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926593/bishal_bora_f4ognd.jpg" alt="Niharika Hazarika" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="83.6" data-suffix="%">0%</span></div>
+          <h5>Niharika Hazarika</h5>
+          <p>Class XII, 2026</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926604/pratista_shivam_e4jzgf.jpg" alt="Dikshita Saikia" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="83.4" data-suffix="%">0%</span></div>
+          <h5>Dikshita Saikia</h5>
+          <p>Class XII, 2026</p>
+          <p>Humanities</p>
+        </div>   
+      </div>
 
-<!-- CONTACT -->
-<section class="section">
-  <h2>Contact Us</h2>
-  <form>
-    <input type="text" placeholder="Your Name">
-    <input type="email" placeholder="Your Email">
-    <textarea placeholder="Message"></textarea>
-    <button>Submit</button>
-  </form>
-</section>
+        
+  <section class="alt-bg">
+    <div class="container">
+      <h2 class="section-title text-center">Our Toppers 2025</h2>
+      <div class="divider center"></div>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-container">
-    
-    <div>
-      <h3>Gurukul Group</h3>
-      <p>Building strong foundation for students.</p>
+      <div class="toppers-grid">
+        <div class="topper-card highlight" data-aos="fade-up" data-aos-delay="0">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012110/Picture1_wvmdna.png" alt="Ankit Bhuyan" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">98.6%</div>
+          <h5>ANKIT BHUYAN</h5>
+          <p>Class X</p>
+        </div>
+
+        <div class="topper-card highlight" data-aos="fade-up" data-aos-delay="60">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012090/Picture2_iaxtvj.png" alt="Ankita Mandal" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">94.2%</div>
+          <h5>ANKITA MANDAL</h5>
+          <p>Class XII</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012089/Picture3_xqfbjk.png" alt="Bipasha Mani Priyam" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">97.6%</div>
+          <h5>BIPASHA MANI PRIYAM</h5>
+          <p>Class X</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012090/Picture4_j7jqxr.png" alt="Tejaswini" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">97.6%</div>
+          <h5>TEJASWINI</h5>
+          <p>Class X</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012091/Picture5_yobpyt.png" alt="Aparajita Byas" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">97.6%</div>
+          <h5>APARAJITA BYAS</h5>
+          <p>Class X</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012092/Picture6_hwkcte.png" alt="Uddipta Baruah" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">96.4%</div>
+          <h5>UDDIPTA BARUAH</h5>
+          <p>Class X</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012091/Picture7_zkvk58.png" alt="Krishangi Nath" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">94.4%</div>
+          <h5>KRISHANGI NATH</h5>
+          <p>Class X</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012092/Picture8_skx1hg.png" alt="Dharmistha Chand" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">94%</div>
+          <h5>DHARMISTHA CHAND</h5>
+          <p>Class X</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012093/Picture9_psnprh.png" alt="Jupranjali Shivam" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">93.8%</div>
+          <h5>JUPRANJALI SHIVAM</h5>
+          <p>Class X</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012094/Picture10_zt0lb5.png" alt="Himan Nath" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">92.8%</div>
+          <h5>HIMAN NATH</h5>
+          <p>Class X</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012096/Picture11_lkowvt.png" alt="Huberta K P Kashyap" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">91%</div>
+          <h5>HUBERTA K P KASHYAP</h5>
+          <p>Class X</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012097/Picture12_hygv1j.png" alt="Jumandeep Bharati" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">90%</div>
+          <h5>JUMANDEEP BHARATI</h5>
+          <p>Class X</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012098/Picture13_fo7zhb.png" alt="Khushi Nath" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">89.4%</div>
+          <h5>KHUSHI NATH</h5>
+          <p>Class X</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012099/Picture14_yruvgr.png" alt="Arik Kalita" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">89.4%</div>
+          <h5>ARIK KALITA</h5>
+          <p>Class X</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012100/Picture15_wyjn9t.png" alt="Subhashish Chabanya" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">89.4%</div>
+          <h5>SUBHASHISH CHABANYA</h5>
+          <p>Class X</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012101/Picture16_gnhvbz.png" alt="Yuvraj Bharadwaj" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">89.2%</div>
+          <h5>YUVRAJ BHARADWAJ</h5>
+          <p>Class X</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012102/Picture17_l0diqv.png" alt="Tejash Pratim Saharia" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">93.6%</div>
+          <h5>TEJASH PRATIM SAHARIA</h5>
+          <p>Class XII</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012103/Picture18_q55fyk.png" alt="Bitopan Sarma" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">88%</div>
+          <h5>BITOPAN SARMA</h5>
+          <p>Class XII</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012105/Picture19_ydaojp.png" alt="Srijan K Shivam" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">80.4%</div>
+          <h5>SRIJAN K SHIVAM</h5>
+          <p>Class XII</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012106/Picture20_dumeyv.png" alt="Nabam Lwimee" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">78.4%</div>
+          <h5>NABAM LWIMEE</h5>
+          <p>Class XII</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012107/Picture21_iopodx.png" alt="Taba Ompu" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">78.4%</div>
+          <h5>TABA OMPU</h5>
+          <p>Class XII</p>
+        </div>
+
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="topper-photo">
+            <img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1777012108/Picture22_o4ousz.png" alt="Taba Dei" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy">
+          </div>
+          <div class="topper-pct">78.4%</div>
+          <h5>TABA DEI</h5>
+          <p>Class XII</p>
+        </div>
+      </div>
+      <h2 class="section-title text-center">Our Toppers 2024</h2>
+      <div class="divider center"></div>
+      <div class="toppers-grid">
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926588/Debasish_sah_zwhsan.jpg" alt="Debasish Saharia" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="99.2" data-suffix="%">0%</span></div>
+          <h5>Debasish Saharia</h5>
+          <p>Class X, 2024</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926575/angaraag_baruah_h2gj3q.jpg" alt="Angaraag Baruah" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="97" data-suffix="%">0%</span></div>
+          <h5>Angaraag Baruah</h5>
+          <p>Class X, 2024</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926593/bishal_bora_f4ognd.jpg" alt="Bishal Bora" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="95.6" data-suffix="%">0%</span></div>
+          <h5>Bishal Bora</h5>
+          <p>Class X, 2024</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926604/pratista_shivam_e4jzgf.jpg" alt="Pratista Shivam" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="95.2" data-suffix="%">0%</span></div>
+          <h5>Pratista Shivam</h5>
+          <p>Class X, 2024</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926615/Nilim_Sagar_nh5aqd.jpg" alt="Nilim Sagar" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="95" data-suffix="%">0%</span></div>
+          <h5>Nilim Sagar</h5>
+          <p>Class X, 2024</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926624/hirakjoti_rajbangshi_isejfz.jpg" alt="Hirakyoti Rajbangshi" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="94.4" data-suffix="%">0%</span></div>
+          <h5>Hirakyoti Rajbangshi</h5>
+          <p>Class X, 2024</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926647/prakriti_leez_saikia_fq46jw.jpg" alt="Prakriti Leez Saikia" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="90" data-suffix="%">0%</span></div>
+          <h5>Prakriti Leez Saikia</h5>
+          <p>Class X, 2024</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926684/jinia_kalita_juzoxb.jpg" alt="Jinia Kalita" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="89" data-suffix="%">0%</span></div>
+          <h5>Jinia Kalita</h5>
+          <p>Class X, 2024</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926690/nikhita_sahariah_eved5o.jpg" alt="Nikhita Sahariah" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="87.2" data-suffix="%">0%</span></div>
+          <h5>Nikhita Sahariah</h5>
+          <p>Class X, 2024</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926702/raktim_saikia_ff0cvp.jpg" alt="Raktim Saikia" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="87" data-suffix="%">0%</span></div>
+          <h5>Raktim Saikia</h5>
+          <p>Class X, 2024</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926716/parineeta_devi_guv8ap.jpg" alt="Parineeta Devi" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="85.8" data-suffix="%">0%</span></div>
+          <h5>Parineeta Devi</h5>
+          <p>Class X, 2024</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926726/birina_kashyap_cpsflp.jpg" alt="Birina Kashyap" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="82.4" data-suffix="%">0%</span></div>
+          <h5>Birina Kashyap</h5>
+          <p>Class X, 2024</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926736/anushka_saha_dlzab6.jpg" alt="Anushka Saha" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="91" data-suffix="%">0%</span></div>
+          <h5>Anushka Saha</h5>
+          <p>Class XII, 2024</p>
+        </div>
+        <div class="topper-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="topper-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926742/jishan_kashyap_lhwfhd.jpg" alt="Jishan Kashyap" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+          <div class="topper-pct"><span data-counter data-target="89" data-suffix="%">0%</span></div>
+          <h5>Jishan Kashyap</h5>
+          <p>Class XII, 2024</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div>
-      <h3>Quick Links</h3>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Facilities</a>
-      <a href="#">Contact</a>
+  <section>
+    <div class="container">
+      <div class="widgets-row" data-aos="fade-up">
+        <div class="widget">
+          <h3>Announcements</h3>
+          <div class="event-item">
+            <div class="event-date"><span>20</span>April<br>2026</div>
+            <div>
+              <p>Class XI Session 2026 Begins( New Class, New Goals, New Achievements)</p>
+              <small>Class XI is a fresh start—believe in yourself, stay consistent, and work daily towards your dreams.
+              Embrace challenges, avoid distractions, and make this year meaningful, strong, and unforgettable.</small>
+            </div>
+
+
+            
+          </div>
+          <div class="event-item">
+            <div class="event-date"><span>03</span>JUNE<br>2026</div>
+            <div>
+              <p>PERIODIC ASSESSMENT-I, EXAM</p>
+              <small>Classes Balvatika-I to XII.</small>
+            </div>
+          </div>
+          <div class="event-item">
+            <div class="event-date"><span>10</span>FEB<br>2025</div>
+            <div>
+              <p>Parent-Teacher Meeting</p>
+              <small>Classes I to V. 9:00 AM to 1:00 PM.</small>
+            </div>
+          </div>
+          <a href="pages/calendar.html" class="more-link">View All Announcements →</a>
+        </div>
+        <div class="widget">
+          <h3>Upcoming Events</h3>
+          <div class="event-item">
+            <div class="event-date"><span>14</span>FEB<br>2025</div>
+            <div>
+              <p>Annual Sports Day</p>
+              <small>Ground events from 8:00 AM onwards.</small>
+            </div>
+          </div>
+          <div class="event-item">
+            <div class="event-date"><span>05</span>MAR<br>2025</div>
+            <div>
+              <p>Pre-Board Examinations Begin</p>
+              <small>Classes X and XII. Timetable attached.</small>
+            </div>
+          </div>
+          <div class="event-item">
+            <div class="event-date"><span>20</span>MAR<br>2025</div>
+            <div>
+              <p>Annual Day Function</p>
+              <small>Cultural performances and prize distribution.</small>
+            </div>
+          </div>
+          <a href="pages/calendar.html" class="more-link">View Full Calendar →</a>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div>
-      <h3>Contact Info</h3>
-      <p>Email: info@gurukul.com</p>
-      <p>Phone: +91 9876543210</p>
+  <!-- <section class="alt-bg">
+    <div class="container">
+      <h2 class="section-title text-center">What Parents Say</h2>
+      <div class="divider center"></div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="quote-mark">"</div>
+          <p>My kids attended the Gurukul Group of Educational Wing, and they're doing very well in their life now. Gurukul Group Of Educational Wing is one of Mangaldai's top international CBSE schools in today's date. Their results have been fantastic. Parents and students should definitely consider this school!</p>
+          <div class="testimonial-author">
+            <div class="author-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926511/atul_zwpipn.jpg" alt="Atul Daimari" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+            <div>
+              <strong>Atul Daimari</strong>
+              <span>Parent</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="quote-mark">"</div>
+          <p>Gurukul Group Of Educational Wing is one of the best Schools in Mangaldai Assam. Their teachers are highly competent, and their methods of teaching are first-rate. Their tuition fees are also reasonable, and they offer their pupils an excellent education. I heartily recommend it.</p>
+          <div class="testimonial-author">
+            <div class="author-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926494/10_lh9xx2.jpg" alt="Raj Basu" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+            <div>
+              <strong>Raj Basu</strong>
+              <span>Parent</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="quote-mark">"</div>
+          <p>Gurukul Group Of Educational Wing is One of Mangaldai's most prestigious and well-known schools. The institution offers its students wonderful educational learning. They have top-notch instructors that are qualified to educate kids in the most effective methods. This school has my highest recommendation.</p>
+          <div class="testimonial-author">
+            <div class="author-photo"><img src="https://res.cloudinary.com/dsfgnnpho/image/upload/v1773926502/monil_kgbanw.jpg" alt="Monin Br" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy"></div>
+            <div>
+              <strong>Monin Br</strong>
+              <span>Parent</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section> -->
 
-  </div>
+  <div id="footer-placeholder"></div>
 
-  <p class="bottom">© 2026 Gurukul Group of Educational Wing</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 </html>
