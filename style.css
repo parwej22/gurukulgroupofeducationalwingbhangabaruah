@@ -130,7 +130,95 @@ nav a {
   padding: 20px;
   border-radius: 10px;
 }
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
 
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1b5e20;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background: #1b5e20;
+  margin: 0 auto 30px auto;
+  border-radius: 5px;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* CARD DESIGN */
+.facility-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+
+  border: 1px solid #eaeaea;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* TOP GREEN LINE */
+.facility-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #1b5e20, #43a047);
+}
+
+/* HOVER EFFECT */
+.facility-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+/* ICON */
+.facility-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+
+  background: #e8f5e9;
+  margin-bottom: 12px;
+}
+
+/* TITLE */
+.facility-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1b5e20;
+  margin: 10px 0;
+}
+
+/* TEXT */
+.facility-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
 /* =========================
    SECTION
 ========================= */
